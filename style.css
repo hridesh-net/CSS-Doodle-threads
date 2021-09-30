@@ -1,0 +1,1018 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: rgb(21, 10, 32);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animcontainer {
+    position: relative;
+    display: grid;
+    border: 2px solid hsla( calc(10 + 4 *60), 70%, 68%, 0.4293545850305615);
+    height: 400px;
+    width: 400px;
+    grid: inherit;
+    grid-area: inherit;
+    transition: all 3.4s ease-in-out;
+}
+
+.t-box:empty {
+    position: relative;
+    line-height: 1;
+    display: grid;
+    place-items: center;
+    /* height: 4px;
+    width: 4px; */
+}
+
+#tb-1 {
+    border: 1.5px solid white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 1);
+    height: calc(75% / 50 * 1);
+    --internal-cell-width: calc(75% / 50 * 1);
+    --internal-cell-height: calc(75% / 50 * 1);
+    -webkit-transform: rotate(calc(1 * 5deg));
+    transform: rotate(calc(1 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 *1), 70%, 68%, 0.3293545850305615);
+}
+
+#tb-2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 2);
+    height: calc(75% / 50 * 2);
+    --internal-cell-width: calc(75% / 50 * 2);
+    --internal-cell-height: calc(75% / 50 * 2);
+    -webkit-transform: rotate(calc(2 * 5deg));
+    transform: rotate(calc(2 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 2), 70%, 68%, 0.24285161396951277);
+}
+
+#tb-3 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 3);
+    height: calc(75% / 50 * 3);
+    --internal-cell-width: calc(75% / 50 * 3);
+    --internal-cell-height: calc(75% / 50 * 3);
+    -webkit-transform: rotate(calc(3 * 5deg));
+    transform: rotate(calc(3 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 3), 70%, 68%, 0.2849673967497543);
+}
+
+#tb-4 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 4);
+    height: calc(75% / 50 * 4);
+    --internal-cell-width: calc(75% / 50 * 4);
+    --internal-cell-height: calc(75% / 50 * 4);
+    -webkit-transform: rotate(calc(4 * 5deg));
+    transform: rotate(calc(4 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 4), 70%, 68%, 0.7042227542712896);
+}
+
+#tb-5 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 5);
+    height: calc(75% / 50 * 5);
+    --internal-cell-width: calc(75% / 50 * 5);
+    --internal-cell-height: calc(75% / 50 * 5);
+    -webkit-transform: rotate(calc(5 * 5deg));
+    transform: rotate(calc(5 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 5), 70%, 68%, 0.16542715901830207);
+}
+
+#tb-6 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 6);
+    height: calc(75% / 50 * 6);
+    --internal-cell-width: calc(75% / 50 * 6);
+    --internal-cell-height: calc(75% / 50 * 6);
+    -webkit-transform: rotate(calc(6 * 5deg));
+    transform: rotate(calc(6 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 6), 70%, 68%, 0.6971558488192038);
+}
+
+#tb-7 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 7);
+    height: calc(75% / 50 * 7);
+    --internal-cell-width: calc(75% / 50 * 7);
+    --internal-cell-height: calc(75% / 50 * 7);
+    -webkit-transform: rotate(calc(7 * 5deg));
+    transform: rotate(calc(7 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 7), 70%, 68%, 0.6770080178122115);
+}
+
+#tb-8 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 8);
+    height: calc(75% / 50 * 8);
+    --internal-cell-width: calc(75% / 50 * 8);
+    --internal-cell-height: calc(75% / 50 * 8);
+    -webkit-transform: rotate(calc(8 * 5deg));
+    transform: rotate(calc(8 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 8), 70%, 68%, 0.29347497808663764);
+}
+
+#tb-9 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 9);
+    height: calc(75% / 50 * 9);
+    --internal-cell-width: calc(75% / 50 * 9);
+    --internal-cell-height: calc(75% / 50 * 9);
+    -webkit-transform: rotate(calc(9 * 5deg));
+    transform: rotate(calc(9 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 9), 70%, 68%, 0.31033183232876915);
+}
+
+#tb-10 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 10);
+    height: calc(75% / 50 * 10);
+    --internal-cell-width: calc(75% / 50 * 10);
+    --internal-cell-height: calc(75% / 50 * 10);
+    -webkit-transform: rotate(calc(10 * 5deg));
+    transform: rotate(calc(10 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 10), 70%, 68%, 0.6326394624707702);
+}
+
+#tb-11 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 11);
+    height: calc(75% / 50 * 11);
+    --internal-cell-width: calc(75% / 50 * 11);
+    --internal-cell-height: calc(75% / 50 * 11);
+    -webkit-transform: rotate(calc(11 * 5deg));
+    transform: rotate(calc(11 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 11), 70%, 68%, 0.584561348234577);
+}
+
+#tb-12 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 12);
+    height: calc(75% / 50 * 12);
+    --internal-cell-width: calc(75% / 50 * 12);
+    --internal-cell-height: calc(75% / 50 * 12);
+    -webkit-transform: rotate(calc(12 * 5deg));
+    transform: rotate(calc(12 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 12), 70%, 68%, 0.7050053787347618);
+}
+
+#tb-13 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 13);
+    height: calc(75% / 50 * 13);
+    --internal-cell-width: calc(75% / 50 * 13);
+    --internal-cell-height: calc(75% / 50 * 13);
+    -webkit-transform: rotate(calc(13 * 5deg));
+    transform: rotate(calc(13 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 13), 70%, 68%, 0.3047282974322408);
+}
+
+#tb-14 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 14);
+    height: calc(75% / 50 * 14);
+    --internal-cell-width: calc(75% / 50 * 14);
+    --internal-cell-height: calc(75% / 50 * 14);
+    -webkit-transform: rotate(calc(14 * 5deg));
+    transform: rotate(calc(14 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 14), 70%, 68%, 0.6819103605162691);
+}
+
+#tb-15 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 15);
+    height: calc(75% / 50 * 15);
+    --internal-cell-width: calc(75% / 50 * 15);
+    --internal-cell-height: calc(75% / 50 * 15);
+    -webkit-transform: rotate(calc(15 * 5deg));
+    transform: rotate(calc(15 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 15), 70%, 68%, 0.5167250794143435);
+}
+
+#tb-16 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 16);
+    height: calc(75% / 50 * 16);
+    --internal-cell-width: calc(75% / 50 * 16);
+    --internal-cell-height: calc(75% / 50 * 16);
+    -webkit-transform: rotate(calc(16 * 5deg));
+    transform: rotate(calc(16 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 16), 70%, 68%, 0.5167250794143435);
+}
+
+#tb-17 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 17);
+    height: calc(75% / 50 * 17);
+    --internal-cell-width: calc(75% / 50 * 17);
+    --internal-cell-height: calc(75% / 50 * 17);
+    -webkit-transform: rotate(calc(17 * 5deg));
+    transform: rotate(calc(17 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 17), 70%, 68%, 0.5167250794143435);
+}
+
+#tb-18 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 18);
+    height: calc(75% / 50 * 18);
+    --internal-cell-width: calc(75% / 50 * 18);
+    --internal-cell-height: calc(75% / 50 * 18);
+    -webkit-transform: rotate(calc(18 * 5deg));
+    transform: rotate(calc(18 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 18), 70%, 68%, 0.5167250794143435);
+}
+
+#tb-19 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 19);
+    height: calc(75% / 50 * 19);
+    --internal-cell-width: calc(75% / 50 * 19);
+    --internal-cell-height: calc(75% / 50 * 19);
+    -webkit-transform: rotate(calc(19 * 5deg));
+    transform: rotate(calc(19 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 19), 70%, 68%, 0.5167250794143435);
+}
+
+#tb-20 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 20);
+    height: calc(75% / 50 * 20);
+    --internal-cell-width: calc(75% / 50 * 20);
+    --internal-cell-height: calc(75% / 50 * 20);
+    -webkit-transform: rotate(calc(20 * 5deg));
+    transform: rotate(calc(20 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 20), 70%, 68%, 0.5167250794143435);
+}
+
+#tb-21 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 21);
+    height: calc(75% / 50 * 21);
+    --internal-cell-width: calc(75% / 50 * 21);
+    --internal-cell-height: calc(75% / 50 * 21);
+    -webkit-transform: rotate(calc(21 * 5deg));
+    transform: rotate(calc(21 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 21), 70%, 68%, 0.5167250794143435);
+}
+
+#tb-22 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 22);
+    height: calc(75% / 50 * 22);
+    --internal-cell-width: calc(75% / 50 * 22);
+    --internal-cell-height: calc(75% / 50 * 22);
+    -webkit-transform: rotate(calc(22 * 5deg));
+    transform: rotate(calc(22 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 22), 70%, 68%, 0.5167250794143435);
+}
+
+#tb-23 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 23);
+    height: calc(75% / 50 * 23);
+    --internal-cell-width: calc(75% / 50 * 23);
+    --internal-cell-height: calc(75% / 50 * 23);
+    -webkit-transform: rotate(calc(23 * 5deg));
+    transform: rotate(calc(23 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 23), 70%, 68%, 0.5167250794143435);
+}
+
+#tb-24 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 24);
+    height: calc(75% / 50 * 24);
+    --internal-cell-width: calc(75% / 50 * 24);
+    --internal-cell-height: calc(75% / 50 * 24);
+    -webkit-transform: rotate(calc(24 * 5deg));
+    transform: rotate(calc(24 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 24), 70%, 68%, 0.5167250794143435);
+}
+
+#tb-25 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 25);
+    height: calc(75% / 50 * 25);
+    --internal-cell-width: calc(75% / 50 * 25);
+    --internal-cell-height: calc(75% / 50 * 25);
+    -webkit-transform: rotate(calc(25 * 5deg));
+    transform: rotate(calc(25 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 25), 70%, 68%, 0.5167250794143435);
+}
+
+#tb-26 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 26);
+    height: calc(75% / 50 * 26);
+    --internal-cell-width: calc(75% / 50 * 26);
+    --internal-cell-height: calc(75% / 50 * 26);
+    -webkit-transform: rotate(calc(26 * 5deg));
+    transform: rotate(calc(26 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 26), 70%, 68%, 0.5167250794143435);
+}
+
+#tb-27 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 27);
+    height: calc(75% / 50 * 27);
+    --internal-cell-width: calc(75% / 50 * 27);
+    --internal-cell-height: calc(75% / 50 * 27);
+    -webkit-transform: rotate(calc(27 * 5deg));
+    transform: rotate(calc(27 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 27), 70%, 68%, 0.5167250794143435);
+}
+
+#tb-28 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 28);
+    height: calc(75% / 50 * 28);
+    --internal-cell-width: calc(75% / 50 * 28);
+    --internal-cell-height: calc(75% / 50 * 28);
+    -webkit-transform: rotate(calc(28 * 5deg));
+    transform: rotate(calc(28 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 28), 70%, 68%, 0.5167250794143435);
+}
+
+#tb-29 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 29);
+    height: calc(75% / 50 * 29);
+    --internal-cell-width: calc(75% / 50 * 29);
+    --internal-cell-height: calc(75% / 50 * 29);
+    -webkit-transform: rotate(calc(29 * 5deg));
+    transform: rotate(calc(29 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 29), 70%, 68%, 0.5167250794143435);
+}
+
+#tb-30 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 30);
+    height: calc(75% / 50 * 30);
+    --internal-cell-width: calc(75% / 50 * 30);
+    --internal-cell-height: calc(75% / 50 * 30);
+    -webkit-transform: rotate(calc(30 * 5deg));
+    transform: rotate(calc(30 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 30), 70%, 68%, 0.5167250794143435);
+}
+
+#tb-31 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 31);
+    height: calc(75% / 50 * 31);
+    --internal-cell-width: calc(75% / 50 * 31);
+    --internal-cell-height: calc(75% / 50 * 31);
+    -webkit-transform: rotate(calc(31 * 5deg));
+    transform: rotate(calc(31 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 31), 70%, 68%, 0.5167250794143435);
+}
+
+#tb-32 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 32);
+    height: calc(75% / 50 * 32);
+    --internal-cell-width: calc(75% / 50 * 32);
+    --internal-cell-height: calc(75% / 50 * 32);
+    -webkit-transform: rotate(calc(32 * 5deg));
+    transform: rotate(calc(32 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 32), 70%, 68%, 0.5167250794143435);
+}
+
+#tb-33 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 33);
+    height: calc(75% / 50 * 33);
+    --internal-cell-width: calc(75% / 50 * 33);
+    --internal-cell-height: calc(75% / 50 * 33);
+    -webkit-transform: rotate(calc(33 * 5deg));
+    transform: rotate(calc(33 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 33), 70%, 68%, 0.5167250794143435);
+}
+
+#tb-34 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 34);
+    height: calc(75% / 50 * 34);
+    --internal-cell-width: calc(75% / 50 * 34);
+    --internal-cell-height: calc(75% / 50 * 34);
+    -webkit-transform: rotate(calc(34 * 5deg));
+    transform: rotate(calc(34 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 34), 70%, 68%, 0.5167250794143435);
+}
+
+#tb-35 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 35);
+    height: calc(75% / 50 * 35);
+    --internal-cell-width: calc(75% / 50 * 35);
+    --internal-cell-height: calc(75% / 50 * 35);
+    -webkit-transform: rotate(calc(35 * 5deg));
+    transform: rotate(calc(35 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 35), 70%, 68%, 0.5167250794143435);
+}
+
+#tb-36 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 36);
+    height: calc(75% / 50 * 36);
+    --internal-cell-width: calc(75% / 50 * 36);
+    --internal-cell-height: calc(75% / 50 * 36);
+    -webkit-transform: rotate(calc(36 * 5deg));
+    transform: rotate(calc(36 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 36), 70%, 68%, 0.5167250794143435);
+}
+
+#tb-37 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 37);
+    height: calc(75% / 50 * 37);
+    --internal-cell-width: calc(75% / 50 * 37);
+    --internal-cell-height: calc(75% / 50 * 37);
+    -webkit-transform: rotate(calc(37 * 5deg));
+    transform: rotate(calc(37 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 37), 70%, 68%, 0.5167250794143435);
+}
+
+#tb-38 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 38);
+    height: calc(75% / 50 * 38);
+    --internal-cell-width: calc(75% / 50 * 38);
+    --internal-cell-height: calc(75% / 50 * 38);
+    -webkit-transform: rotate(calc(38 * 5deg));
+    transform: rotate(calc(38 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 38), 70%, 68%, 0.5167250794143435);
+}
+
+#tb-39 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 39);
+    height: calc(75% / 50 * 39);
+    --internal-cell-width: calc(75% / 50 * 39);
+    --internal-cell-height: calc(75% / 50 * 39);
+    -webkit-transform: rotate(calc(39 * 5deg));
+    transform: rotate(calc(39 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 39), 70%, 68%, 0.5167250794143435);
+}
+
+#tb-40 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 40);
+    height: calc(75% / 50 * 40);
+    --internal-cell-width: calc(75% / 50 * 40);
+    --internal-cell-height: calc(75% / 50 * 40);
+    -webkit-transform: rotate(calc(40 * 5deg));
+    transform: rotate(calc(40 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 40), 70%, 68%, 0.5167250794143435);
+}
+
+#tb-41 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 41);
+    height: calc(75% / 50 * 41);
+    --internal-cell-width: calc(75% / 50 * 41);
+    --internal-cell-height: calc(75% / 50 * 41);
+    -webkit-transform: rotate(calc(41 * 5deg));
+    transform: rotate(calc(41 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 41), 70%, 68%, 0.5167250794143435);
+}
+
+#tb-42 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 42);
+    height: calc(75% / 50 * 42);
+    --internal-cell-width: calc(75% / 50 * 42);
+    --internal-cell-height: calc(75% / 50 * 42);
+    -webkit-transform: rotate(calc(42 * 5deg));
+    transform: rotate(calc(42 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 42), 70%, 68%, 0.5167250794143435);
+}
+
+#tb-43 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 43);
+    height: calc(75% / 50 * 43);
+    --internal-cell-width: calc(75% / 50 * 43);
+    --internal-cell-height: calc(75% / 50 * 43);
+    -webkit-transform: rotate(calc(43 * 5deg));
+    transform: rotate(calc(43 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 43), 70%, 68%, 0.5167250794143435);
+}
+
+#tb-44 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 44);
+    height: calc(75% / 50 * 44);
+    --internal-cell-width: calc(75% / 50 * 44);
+    --internal-cell-height: calc(75% / 50 * 44);
+    -webkit-transform: rotate(calc(44 * 5deg));
+    transform: rotate(calc(44 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 44), 70%, 68%, 0.5167250794143435);
+}
+
+#tb-46 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 46);
+    height: calc(75% / 50 * 46);
+    --internal-cell-width: calc(75% / 50 * 46);
+    --internal-cell-height: calc(75% / 50 * 46);
+    -webkit-transform: rotate(calc(46 * 5deg));
+    transform: rotate(calc(46 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 46), 70%, 68%, 0.5167250794143435);
+}
+
+#tb-47 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 47);
+    height: calc(75% / 50 * 47);
+    --internal-cell-width: calc(75% / 50 * 47);
+    --internal-cell-height: calc(75% / 50 * 47);
+    -webkit-transform: rotate(calc(47 * 5deg));
+    transform: rotate(calc(47 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 47), 70%, 68%, 0.5167250794143435);
+}
+
+#tb-48 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 48);
+    height: calc(75% / 50 * 48);
+    --internal-cell-width: calc(75% / 50 * 48);
+    --internal-cell-height: calc(75% / 50 * 48);
+    -webkit-transform: rotate(calc(48 * 5deg));
+    transform: rotate(calc(48 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 48), 70%, 68%, 0.5167250794143435);
+}
+
+#tb-49 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 49);
+    height: calc(75% / 50 * 49);
+    --internal-cell-width: calc(75% / 50 * 49);
+    --internal-cell-height: calc(75% / 50 * 49);
+    -webkit-transform: rotate(calc(49 * 5deg));
+    transform: rotate(calc(49 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 49), 70%, 68%, 0.5167250794143435);
+}
+
+#tb-50 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 50);
+    height: calc(75% / 50 * 50);
+    --internal-cell-width: calc(75% / 50 * 50);
+    --internal-cell-height: calc(75% / 50 * 50);
+    -webkit-transform: rotate(calc(50 * 5deg));
+    transform: rotate(calc(50 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 50), 70%, 68%, 0.5167250794143435);
+}
+
+.animcontainer:hover {
+    border: none;
+    transform: rotate(-360deg);
+}
