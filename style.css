@@ -17,8 +17,8 @@ body {
     position: relative;
     display: grid;
     border: 2px solid hsla( calc(10 + 4 *60), 70%, 68%, 0.4293545850305615);
-    height: 400px;
-    width: 400px;
+    height: 30rem;
+    width: 30rem;
     grid: inherit;
     grid-area: inherit;
     transition: all 3.4s ease-in-out;
@@ -1010,6 +1010,206 @@ body {
     -webkit-border-radius: 30%;
     border-radius: 30%;
     border: 1px solid hsla( calc(10 + 4 * 50), 70%, 68%, 0.5167250794143435);
+}
+
+#tb-51 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 51);
+    height: calc(75% / 50 * 51);
+    --internal-cell-width: calc(75% / 50 * 51);
+    --internal-cell-height: calc(75% / 50 * 51);
+    -webkit-transform: rotate(calc(51 * 5deg));
+    transform: rotate(calc(51 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 51), 70%, 68%, 0.5167250794143435);
+}
+
+#tb-52 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 52);
+    height: calc(75% / 50 * 52);
+    --internal-cell-width: calc(75% / 50 * 52);
+    --internal-cell-height: calc(75% / 50 * 52);
+    -webkit-transform: rotate(calc(52 * 5deg));
+    transform: rotate(calc(52 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 52), 70%, 68%, 0.5167250794143435);
+}
+
+#tb-53 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 53);
+    height: calc(75% / 50 * 53);
+    --internal-cell-width: calc(75% / 50 * 53);
+    --internal-cell-height: calc(75% / 50 * 53);
+    -webkit-transform: rotate(calc(53 * 5deg));
+    transform: rotate(calc(53 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 53), 70%, 68%, 0.5167250794143435);
+}
+
+#tb-54 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 54);
+    height: calc(75% / 50 * 54);
+    --internal-cell-width: calc(75% / 50 * 54);
+    --internal-cell-height: calc(75% / 50 * 54);
+    -webkit-transform: rotate(calc(54 * 5deg));
+    transform: rotate(calc(54 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 54), 70%, 68%, 0.5167250794143435);
+}
+
+#tb-55 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 55);
+    height: calc(75% / 50 * 55);
+    --internal-cell-width: calc(75% / 50 * 55);
+    --internal-cell-height: calc(75% / 50 * 55);
+    -webkit-transform: rotate(calc(55 * 5deg));
+    transform: rotate(calc(55 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 55), 70%, 68%, 0.5167250794143435);
+}
+
+#tb-56 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 56);
+    height: calc(75% / 50 * 56);
+    --internal-cell-width: calc(75% / 50 * 56);
+    --internal-cell-height: calc(75% / 50 * 56);
+    -webkit-transform: rotate(calc(56 * 5deg));
+    transform: rotate(calc(56 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 56), 70%, 68%, 0.5167250794143435);
+}
+
+#tb-57 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 57);
+    height: calc(75% / 50 * 57);
+    --internal-cell-width: calc(75% / 50 * 57);
+    --internal-cell-height: calc(75% / 50 * 57);
+    -webkit-transform: rotate(calc(57 * 5deg));
+    transform: rotate(calc(57 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 57), 70%, 68%, 0.5167250794143435);
+}
+
+#tb-58 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 58);
+    height: calc(75% / 50 * 58);
+    --internal-cell-width: calc(75% / 50 * 58);
+    --internal-cell-height: calc(75% / 50 * 58);
+    -webkit-transform: rotate(calc(58 * 5deg));
+    transform: rotate(calc(58 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 58), 70%, 68%, 0.5167250794143435);
+}
+
+#tb-59 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 59);
+    height: calc(75% / 50 * 59);
+    --internal-cell-width: calc(75% / 50 * 59);
+    --internal-cell-height: calc(75% / 50 * 59);
+    -webkit-transform: rotate(calc(59 * 5deg));
+    transform: rotate(calc(59 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 59), 70%, 68%, 0.5167250794143435);
+}
+
+#tb-60 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--internal-cell-width, 25%);
+    height: var(--internal-cell-height, 25%);
+    margin-left: calc(var(--internal-cell-width, 25%) / -2);
+    margin-top: calc(var(--internal-cell-height, 25%) / -2);
+    grid-area: unset;
+    width: calc(75% / 50 * 60);
+    height: calc(75% / 50 * 60);
+    --internal-cell-width: calc(75% / 50 * 60);
+    --internal-cell-height: calc(75% / 50 * 60);
+    -webkit-transform: rotate(calc(60 * 5deg));
+    transform: rotate(calc(60 * 5deg));
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
+    border: 1px solid hsla( calc(10 + 4 * 60), 70%, 68%, 0.5167250794143435);
 }
 
 .animcontainer:hover {
